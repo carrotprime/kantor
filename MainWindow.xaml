@@ -1,0 +1,22 @@
+﻿<Window x:Class="CurrencyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kalkulator walut NBP" Height="300" Width="350">
+
+	<StackPanel Margin="20">
+
+		<TextBlock Text="Kwota:"/>
+		<TextBox x:Name="txtAmount" Margin="0,5,0,10"/>
+
+		<TextBlock Text="Z waluty:"/>
+		<ComboBox x:Name="cmbFrom" Margin="0,5,0,10"/>
+
+		<TextBlock Text="Na walutę:"/>
+		<ComboBox x:Name="cmbTo" Margin="0,5,0,10"/>
+
+		<Button Content="Przelicz" Click="Convert_Click" Margin="0,10,0,10"/>
+
+		<TextBlock x:Name="lblResult" FontSize="14"/>
+
+	</StackPanel>
+</Window>
